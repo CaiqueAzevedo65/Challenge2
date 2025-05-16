@@ -1,0 +1,21 @@
+.results-image-space {
+    background-image: url('/public/images/metricas.png');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+
+.shadow {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.616);
+}
+
+.title {
+    height: 100vh;
+    margin-bottom: 0;
+}
+
+.citysearch {
+    height: 100vh;
+}
+

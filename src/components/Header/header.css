@@ -1,0 +1,43 @@
+.header {
+    width: 100%;
+    background: linear-gradient(270deg, #0c6681, #054558 );
+    color: #ffff;
+    height: 100px;
+}
+
+.logospace {
+    height: 100px;
+    width: 20%;
+    
+}
+
+.logo{
+    font-size: xx-large;
+}
+
+.searchspace {
+    height: 100px;
+}
+
+.tornado{
+    font-size: x-large;
+}
+
+.bars {
+    font-size: xx-large;
+}
+
+.btn:focus {
+    border: none;
+}
+
+.hover-dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 10rem;
+}
+
+.custom-dropdown .dropdown-item:hover {
+    background-color: #0c6681;
+    color: #ffff;
+    transition: background-color 0.5s ease;
+}

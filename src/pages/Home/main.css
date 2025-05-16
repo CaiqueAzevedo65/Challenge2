@@ -1,0 +1,25 @@
+.homepage-content {
+    background-image: url('/public/images/pexels-photo-8568719.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.welcome {
+    color: #ffff;
+    height: 50%;
+    background: #0000006c;
+    border-radius: 15px;
+}
+
+.presentation {
+    color: #ffff;
+    width: 70%;
+    height: 50%;
+    justify-self: center;
+}
+
+.presentation-space {
+    background: #0000006c;
+}

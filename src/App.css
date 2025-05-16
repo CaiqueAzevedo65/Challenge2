@@ -1,0 +1,115 @@
+.Image {
+    width: 100%;
+    height: 30vh;
+    background-image: url("/images/pexels-photo-8568719.jpeg");
+    background-position: center;
+}
+
+.image2 {
+    width: 80%;
+    height: 370px;
+    background-image: url(public/images/equipe-de-desenvolvedores-fazendo-brainstorming-otimizando-o-codigo_482257-112972.png);
+}
+
+.shadow {
+    width: 100%;
+    height: 30vh;
+    background-color: #00000056;
+}
+
+.Presentation, .Ptext {
+    width: 85%;
+    height: 20vh;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+.Welcome {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    margin: 2px auto;
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: #4b4b4b;
+    width: 100%;
+}
+
+#searchinput {
+    padding: 8px;
+    border: none;
+    background-color: #ffffff;
+    width: 100%;
+    outline: none;
+}
+
+.icons {
+    width: 100%;
+    height: 16vh;
+}
+
+.icons-space1 {
+    width: 34%;
+    height: 19vh;
+    justify-self: center;
+    border-radius: 100%;
+    background: linear-gradient(270deg, #ffd5bd, #ffe3d4 );
+}
+
+.icons-space2 {
+    width: 34%;
+    height: 19vh;
+    justify-self: center;
+    border-radius: 100%;
+    background: linear-gradient(270deg, #cce0f9, #d7ecff );
+}
+
+.icons-space3 {
+    width: 34%;
+    height: 19vh;
+    justify-self: center;
+    border-radius: 100%;
+    background: linear-gradient(270deg, #f0e2b8, #f5eacb );
+}
+
+.fire, .earth, .water {
+    font-size: 60px;
+    margin-top: 1.8rem;
+}
+
+.ptext-space {
+    height: 20vh;
+}
+
+.pitch {
+    background-color: #d7ecff;
+}
+
+.project {
+    background-color: #d7ecff;
+    height: 70vh;
+}
+
+.project-text {
+    width: 70%;
+    height: 370px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}

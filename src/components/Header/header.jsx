@@ -13,10 +13,10 @@ function Header() {
         <header className="header">
             <div className="row">
                 <div className="col-lg-3 logospace d-flex justify-content-center align-items-center">
-                    <div className='Logo ms-5'>
+                    <Link to="/" className='Logo ms-5 text-decoration-none'>
                         <FontAwesomeIcon className="tornado" icon={faTornado} style={{ color: "#a9bddf" }} />
                         <span className="logo text-light">Prevent</span>
-                    </div>
+                    </Link>
                 </div>
                 <div className="searchspace col-lg-6 d-flex justify-content-center align-items-center">
                     <div className="search ms-4">

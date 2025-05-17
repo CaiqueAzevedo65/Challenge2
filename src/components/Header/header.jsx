@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTornado } from '@fortawesome/free-solid-svg-icons'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 
@@ -20,7 +21,7 @@ function Header() {
                 <div className="searchspace col-lg-6 d-flex justify-content-center align-items-center">
                     <div className="search ms-4">
                         <input type="text" id="searchinput" placeholder="Pesquisar" />
-                        <label for="">
+                        <label htmlFor="searchinput">
                             <FontAwesomeIcon icon={faMagnifyingGlass} />
                         </label>
                     </div>
@@ -37,7 +38,7 @@ function Header() {
                             <a className="dropdown-item" href="#">Formulário</a>
                         </li>
                         <li>
-                            <a className="dropdown-item" href="#">Configurações</a>
+                            <Link className="dropdown-item" to="/Configurations">Configurações</Link>
                         </li>
                     </ul>
                 </div>

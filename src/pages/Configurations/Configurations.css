@@ -1,0 +1,9 @@
+.configurations-container {
+    min-height: calc(100vh - 200px); /* Ajuste conforme a altura do seu header e footer */
+    padding: 2rem;
+}
+
+.configurations-container h1 {
+    color: #333;
+    margin-bottom: 2rem;
+}

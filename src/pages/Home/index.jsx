@@ -1,6 +1,6 @@
 import "./main.css"
-import Header from '../../components/Header'
-import Footer from "../../components/Footer"
+import Header from '../../components/Header/header'
+import Footer from "../../components/Footer/footer"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTornado } from '@fortawesome/free-solid-svg-icons'
 import { faFire } from '@fortawesome/free-solid-svg-icons'

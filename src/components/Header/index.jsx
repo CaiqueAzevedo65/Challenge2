@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTornado } from '@fortawesome/free-solid-svg-icons'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 
@@ -13,15 +12,15 @@ function Header() {
         <header className="header">
             <div className="row">
                 <div className="col-lg-3 logospace d-flex justify-content-center align-items-center">
-                    <Link to="/" className='Logo ms-5 text-decoration-none'>
+                    <div className='Logo ms-5'>
                         <FontAwesomeIcon className="tornado" icon={faTornado} style={{ color: "#a9bddf" }} />
                         <span className="logo text-light">Prevent</span>
-                    </Link>
+                    </div>
                 </div>
                 <div className="searchspace col-lg-6 d-flex justify-content-center align-items-center">
                     <div className="search ms-4">
                         <input type="text" id="searchinput" placeholder="Pesquisar" />
-                        <label htmlFor="searchinput">
+                        <label for="">
                             <FontAwesomeIcon icon={faMagnifyingGlass} />
                         </label>
                     </div>
@@ -35,10 +34,10 @@ function Header() {
                             <a className="dropdown-item" href="#">Histórico</a>
                         </li>
                         <li>
-                            <a className="dropdown-item" href="#">Formulário</a>
+                            <a className="dropdown-item" href="#">Sobre o Projeto</a>
                         </li>
                         <li>
-                            <Link className="dropdown-item" to="/Configurations">Configurações</Link>
+                            <a className="dropdown-item" href="#">Configurações</a>
                         </li>
                     </ul>
                 </div>

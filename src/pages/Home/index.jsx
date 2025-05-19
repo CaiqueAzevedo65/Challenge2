@@ -10,10 +10,10 @@ import { faMountain } from '@fortawesome/free-solid-svg-icons'
 function Home() {
     return (
         <>
+            <Header/>
             <div className='Image'>
                 <div className='shadow'></div>
             </div>
-            <Header/>
             <div className='Welcome row'>
                 <h1 className='pt-5 mt-5 pb-5 mb-3 display-1 text-primary'>Bem vindo ao nosso sistema</h1>
             </div>

@@ -56,35 +56,36 @@
 .icons {
     width: 100%;
     height: 16vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons-space1, .icons-space2, .icons-space3 {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .icons-space1 {
-    width: 34%;
-    height: 19vh;
-    justify-self: center;
-    border-radius: 100%;
-    background: linear-gradient(270deg, #ffd5bd, #ffe3d4 );
+    background: linear-gradient(270deg, #ffd5bd, #ffe3d4);
 }
 
 .icons-space2 {
-    width: 34%;
-    height: 19vh;
-    justify-self: center;
-    border-radius: 100%;
-    background: linear-gradient(270deg, #cce0f9, #d7ecff );
+    background: linear-gradient(270deg, #cce0f9, #d7ecff);
 }
 
 .icons-space3 {
-    width: 34%;
-    height: 19vh;
-    justify-self: center;
-    border-radius: 100%;
-    background: linear-gradient(270deg, #f0e2b8, #f5eacb );
+    background: linear-gradient(270deg, #f0e2b8, #f5eacb);
 }
 
 .fire, .earth, .water {
     font-size: 60px;
-    margin-top: 1.8rem;
+    margin: 0;
 }
 
 .ptext-space {

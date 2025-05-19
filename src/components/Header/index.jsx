@@ -1,26 +1,25 @@
-import "./header.css"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTornado } from '@fortawesome/free-solid-svg-icons'
+import "./header.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTornado } from '@fortawesome/free-solid-svg-icons';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-
+import { Link } from 'react-router-dom';
 
 function Header() {
-
     return (
         <header className="header">
             <div className="row">
                 <div className="col-lg-3 logospace d-flex justify-content-center align-items-center">
-                    <div className='Logo ms-5'>
+                    <Link to="/" className='Logo ms-5 text-decoration-none'>
                         <FontAwesomeIcon className="tornado" icon={faTornado} style={{ color: "#a9bddf" }} />
                         <span className="logo text-light">Prevent</span>
-                    </div>
+                    </Link>
                 </div>
                 <div className="searchspace col-lg-6 d-flex justify-content-center align-items-center">
                     <div className="search ms-4">
                         <input type="text" id="searchinput" placeholder="Pesquisar" />
-                        <label for="">
+                        <label htmlFor="searchinput">
                             <FontAwesomeIcon icon={faMagnifyingGlass} />
                         </label>
                     </div>
@@ -31,13 +30,13 @@ function Header() {
                     </button>
                     <ul className="dropdown-menu custom-dropdown" aria-labelledby="menuDropdown">
                         <li>
-                            <a className="dropdown-item" href="#">Histórico</a>
+                            <Link className="dropdown-item" to="/Historico">Histórico</Link>
                         </li>
                         <li>
-                            <a className="dropdown-item" href="#">Sobre o Projeto</a>
+                            <Link className="dropdown-item" to="/Projects">Sobre o Projeto</Link>
                         </li>
                         <li>
-                            <a className="dropdown-item" href="#">Configurações</a>
+                            <Link className="dropdown-item" to="/Configurations">Configurações</Link>
                         </li>
                     </ul>
                 </div>
@@ -46,4 +45,4 @@ function Header() {
     );
 }
 
-export default Header
+export default Header;

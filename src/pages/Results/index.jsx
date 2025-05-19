@@ -1,10 +1,10 @@
-import { height } from '@fortawesome/free-solid-svg-icons/fa0'
-import './results.css'
+import { height } from '@fortawesome/free-solid-svg-icons/fa0';
+import './results.css';
 import MapComponent from '../../components/Map';
 import GraficoChuva from '../../components/Graphic';
 import Footer from '../../components/Footer';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTornado } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTornado } from '@fortawesome/free-solid-svg-icons';
 
 function Results() {
     return (

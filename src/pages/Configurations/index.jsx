@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from '../../components/Header/header';
-import Footer from '../../components/Footer/footer';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 import './Configurations.css';
 
 function Configurations() {

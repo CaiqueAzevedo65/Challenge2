@@ -1,18 +1,45 @@
-import "./main.css"
-import Header from '../../components/Header'
-import Footer from "../../components/Footer"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTornado } from '@fortawesome/free-solid-svg-icons'
-import { faFire } from '@fortawesome/free-solid-svg-icons'
-import { faCloudRain } from '@fortawesome/free-solid-svg-icons'
-import { faMountain } from '@fortawesome/free-solid-svg-icons'
+import "./main.css";
+import Header from '../../components/Header';
+import Footer from "../../components/Footer";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFire, faCloudRain, faMountain } from '@fortawesome/free-solid-svg-icons';
+import { useNavigate } from "react-router-dom";
 
 function Home() {
+    const estados = [
+        { nome: "São Paulo", id: 1 },
+        { nome: "Rio de Janeiro", id: 2 },
+        { nome: "Minas Gerais", id: 3 },
+    ];
+
+    const navigate = useNavigate();
+
     return (
         <>
-            <Header/>
             <div className='Image'>
                 <div className='shadow'></div>
+            </div>
+            <Header />
+            <div className="grid-estados row mb-4">
+                {estados.map((estado) => (
+                    <div key={estado.id} className="col-lg-4 d-flex align-items-center justify-content-between mb-3">
+                        <span className="estado-nome">{estado.nome}</span>
+                        <div>
+                            <button
+                                className="btn btn-danger me-2"
+                                onClick={() => navigate(`/results/${estado.nome}`)}
+                            >
+                                Tragédia em Tempo Real
+                            </button>
+                            <button
+                                className="btn btn-primary"
+                                onClick={() => navigate(`/historico/${estado.nome}`)} // Navega para a rota dinâmica
+                            >
+                                Histórico de Tragédias
+                            </button>
+                        </div>
+                    </div>
+                ))}
             </div>
             <div className='Welcome row'>
                 <h1 className='pt-5 mt-5 pb-5 mb-3 display-1 text-primary'>Bem vindo ao nosso sistema</h1>
@@ -83,4 +110,4 @@ function Home() {
     );
 }
 
-export default Home
+export default Home;

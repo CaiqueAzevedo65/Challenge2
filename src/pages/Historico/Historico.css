@@ -1,0 +1,102 @@
+.historico-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.historico-container h1 {
+    color: #0078d4;
+    margin-bottom: 20px;
+}
+
+/* Estilo geral da tabela */
+.historico-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Cabeçalho da tabela */
+.historico-table thead tr {
+    background-color: #007bff;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Linhas da tabela */
+.historico-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+    transition: background-color 0.3s ease;
+}
+
+.historico-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Células da tabela */
+.historico-table th, .historico-table td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+/* Ícones de alerta */
+.historico-table .alerta {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+/* Ícones de estado (farol) */
+.historico-table td .fa-circle {
+    font-size: 18px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .historico-table {
+        font-size: 14px;
+    }
+
+    .historico-table th, .historico-table td {
+        padding: 10px;
+    }
+}
+
+.alerta.alto {
+    color: red;
+    font-weight: bold;
+}
+
+.alerta.médio {
+    color: orange;
+    font-weight: bold;
+}
+
+.alerta.baixo {
+    color: green;
+    font-weight: bold;
+}
+
+/* Estilo do cabeçalho */
+.historico-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.historico-header h1 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.historico-header .historico-subtitle {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 0;
+}

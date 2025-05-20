@@ -21,12 +21,14 @@
 }
 
 .flag {
-    width: 230px;
-    height: 20vh;
+    width: 150px;
+    height: 100px;
     background-image: url('/public/images/Espera_Feliz_MG.svg.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
 }
 
 .city-text-space {
@@ -36,7 +38,9 @@
 }
 
 .city-presentation {
-    font-size: 18px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
 }
 
 .maps {
@@ -60,7 +64,9 @@
 }
 
 .maps-space {
-    background-color: #d7ecff;
+    padding: 20px;
+    background-color: #eef7ff;
+    border-radius: 8px;
 }
 
 .link {
@@ -104,4 +110,33 @@
     margin-bottom: 2rem;
     padding: 1.5rem;
     background-color: #d7deff;
+}
+
+.chart-container {
+    max-width: 400px;
+    max-height: 400px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Section container with border and padding */
+.section-container {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+}
+
+/* Add spacing and alignment for city information */
+.citysearch {
+    padding: 20px;
+}
+
+/* Section titles */
+h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
 }

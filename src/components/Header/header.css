@@ -1,8 +1,10 @@
 .header {
     width: 100%;
-    background: linear-gradient(270deg, #0c6681, #054558 );
+    background: linear-gradient(270deg, #0c6681, #054558);
     color: #ffff;
     height: 100px;
+    margin: 0;
+    padding: 0;
 }
 
 .logospace {

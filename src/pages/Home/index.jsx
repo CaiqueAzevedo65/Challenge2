@@ -16,10 +16,10 @@ function Home() {
 
     return (
         <>
-            <Header />
             <div className='Image'>
                 <div className='shadow'></div>
             </div>
+            <Header/>
             <div className="grid-estados row mb-4">
                 {estados.map((estado) => (
                     <div key={estado.id} className="col-lg-4 d-flex align-items-center justify-content-between mb-3">

@@ -3,7 +3,7 @@ import Home from "./pages/Home";
 import Results from "./pages/Results";
 import Project from "./pages/Project";
 import Configurations from "./pages/Configurations";
-import Historico from "./pages/Histórico";
+import Historico from "./pages/Historico";
 
 function AppRoutes() {
     return (

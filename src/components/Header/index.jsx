@@ -30,9 +30,6 @@ function Header() {
                     </button>
                     <ul className="dropdown-menu custom-dropdown" aria-labelledby="menuDropdown">
                         <li>
-                            <Link className="dropdown-item" to="/Historico">Histórico</Link>
-                        </li>
-                        <li>
                             <Link className="dropdown-item" to="/Projects">Sobre o Projeto</Link>
                         </li>
                         <li>

@@ -1,9 +1,10 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
-import Results from "./pages/Results";
-import Project from "./pages/Project";
-import Configurations from "./pages/Configurations";
-import Historico from "./pages/Historico";
+import Home from "../pages/Home";
+import Results from "../pages/Results";
+import Footer from "../components/Footer";
+import Project from "../pages/Project";
+import Configurations from "../pages/Configurations";
+import Historico from "../pages/Historico";
 
 function AppRoutes() {
     return (

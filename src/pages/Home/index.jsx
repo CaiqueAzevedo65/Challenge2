@@ -3,7 +3,7 @@ import Header from '../../components/Header';
 import Footer from "../../components/Footer";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFire, faCloudRain, faMountain } from '@fortawesome/free-solid-svg-icons';
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 function Home() {
     const estados = [
@@ -86,7 +86,7 @@ function Home() {
                             <p className='mt-4 mb-4'>
                                 Descubra como nasceu o Prevent, um sistema pensado para monitorar riscos ambientais e proteger comunidades. Conheça os desenvolvedores por trás da ideia, as tecnologias utilizadas e o impacto que buscamos causar.
                             </p>
-                            <button className='btn btn-primary'>Veja mais</button>
+                            <Link to="/projects" className='btn btn-primary'>Veja mais</Link>
                         </div>
                     </div>
                 </div>

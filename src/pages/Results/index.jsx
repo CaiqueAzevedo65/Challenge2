@@ -1,4 +1,4 @@
-import './results.css';
+import './main.css';
 import MapComponent from '../../components/Map';
 import GraficoChuva from '../../components/Graphic';
 import Footer from '../../components/Footer';

@@ -1,4 +1,4 @@
-import "./style.css";
+import "./main.css";
 import Header from "../../components/Header";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUsers, faLightbulb, faShieldAlt } from '@fortawesome/free-solid-svg-icons';

@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
 import Header from '../../components/Header';
 import Footer from "../../components/Footer";
-import "./Historico.css";
+import "./main.css";
 
 function Historico() {
     const { estado } = useParams(); // Captura o estado da URL

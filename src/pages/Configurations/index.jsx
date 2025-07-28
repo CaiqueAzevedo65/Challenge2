@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Container, Form, Button, Row, Col, Card, Tabs, Tab } from 'react-bootstrap';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import './Configurations.css';
+import './main.css';
 
 function Configurations() {
     const [formData, setFormData] = useState({

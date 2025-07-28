@@ -1,6 +1,7 @@
 import './main.css';
 import MapComponent from '../../components/Map';
 import GraficoChuva from '../../components/Graphic';
+import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTornado } from '@fortawesome/free-solid-svg-icons';
@@ -66,22 +67,8 @@ function Results() {
 
     return (
         <>
+            <Header />
             <div className="container-fluid px-4">
-                {/* Header */}
-                <div className="results-image-space mb-5">
-                    <div className="header-results navbar d-flex justify-content-between align-items-center">
-                        <div className="Logo ps-3">
-                            <FontAwesomeIcon className="tornado" icon={faTornado} style={{ color: "#a9bddf" }} />
-                            <span className="logo text-light ms-2">Prevent</span>
-                        </div>
-                        <ul className="ul1 d-flex">
-                            <a className="link text-light me-3" href="/">Home</a>
-                        </ul>
-                    </div>
-                    <div className="shadoww text-center py-4">
-                        <h1 className="title text-light">{city}</h1>
-                    </div>
-                </div>
 
                 {/* City Information Section */}
                 <div className="section-container mb-5">

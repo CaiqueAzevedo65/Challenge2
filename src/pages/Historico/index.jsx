@@ -47,10 +47,10 @@ function Historico() {
 
     return (
         <>
+            <Header />
             <div className='Image'>
                 <div className='shadow'></div>
             </div>
-            <Header />
             <div className="historico-container">
                 <div className="historico-header">
                     <h1>Histórico de Tragédias Climáticas - {estado}</h1>

@@ -18,13 +18,13 @@ function Header() {
                 </div>
                 <div className="searchspace col-lg-6 d-flex justify-content-center align-items-center">
                     <div className="search ms-4">
-                        <input type="text" id="searchinput" placeholder="Pesquisar" />
+                        <input type="text" id="searchinput" placeholder="Pesquisar bairro ou cidade" />
                         <label htmlFor="searchinput">
                             <FontAwesomeIcon icon={faMagnifyingGlass} />
                         </label>
                     </div>
                 </div>
-                <div className="dropdown hover-dropdown col-lg-3 d-flex align-items-center">
+                <div className="dropdown col-lg-3 d-flex align-items-center">
                     <button className="btn dropdown-toggle-no-caret" type="button" id="menuDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                         <FontAwesomeIcon className="bars text-light" icon={faBars} />
                     </button>

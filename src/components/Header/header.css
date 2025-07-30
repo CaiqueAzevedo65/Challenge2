@@ -33,11 +33,6 @@
     border: none;
 }
 
-.hover-dropdown:hover .dropdown-menu {
-    display: block;
-    margin-top: 10rem;
-}
-
 .custom-dropdown .dropdown-item:hover {
     background-color: #0c6681;
     color: #ffff;

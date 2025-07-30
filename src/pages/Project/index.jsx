@@ -1,5 +1,6 @@
 import "./main.css";
 import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUsers, faLightbulb, faShieldAlt } from '@fortawesome/free-solid-svg-icons';
 
@@ -71,6 +72,7 @@ function Project() {
                     </div>
                 </section>
             </div>
+            <Footer />
         </div>
     );
 }

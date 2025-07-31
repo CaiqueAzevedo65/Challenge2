@@ -25,18 +25,16 @@ function Home() {
                     <div key={estado.id} className="col-lg-4 d-flex align-items-center justify-content-between mb-3">
                         <span className="estado-nome">{estado.nome}</span>
                         <div>
-                            <button
-                                className="btn btn-danger me-2"
-                                onClick={() => navigate(`/results/${estado.nome}`)}
-                            >
-                                Tragédia em Tempo Real
-                            </button>
-                            <button
-                                className="btn btn-primary"
-                                onClick={() => navigate(`/historico/${estado.nome}`)} // Navega para a rota dinâmica
-                            >
-                                Histórico de Tragédias
-                            </button>
+                            <Link to={`/results/${estado.nome}`} >
+                                <button className="btn btn-danger me-2">
+                                    Tragédia em Tempo Real
+                                </button>
+                            </Link>
+                            <Link to={`/historico/${estado.nome}`} >
+                                <button className="btn btn-primary">
+                                    Histórico de Tragédias
+                                </button>
+                            </Link>
                         </div>
                     </div>
                 ))}
@@ -86,7 +84,9 @@ function Home() {
                             <p className='mt-4 mb-4'>
                                 Descubra como nasceu o Prevent, um sistema pensado para monitorar riscos ambientais e proteger comunidades. Conheça os desenvolvedores por trás da ideia, as tecnologias utilizadas e o impacto que buscamos causar.
                             </p>
-                            <Link to="/projects" className='btn btn-primary'>Veja mais</Link>
+                            <Link to="/projects" >
+                                <button className='btn btn-primary'>Veja mais</button>
+                            </Link>
                         </div>
                     </div>
                 </div>

@@ -105,8 +105,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-For more information, please contact: [your-email@example.com](mailto:your-email@example.com)
+For more information, please contact: [caiqueazevedo2005@gmail.com](mailto:caiqueazevedo2005@gmail.com)
 
 ---
 
-Built with ❤️ by [Your Name]
+Built with ❤️ by [Caique Azevedo]

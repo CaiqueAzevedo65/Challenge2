@@ -109,4 +109,4 @@ For more information, please contact: [caiqueazevedo2005@gmail.com](mailto:caiqu
 
 ---
 
-Built with ❤️ by [Caique Azevedo]
+Built with ❤️ by Caique Azevedo

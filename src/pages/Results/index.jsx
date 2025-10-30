@@ -241,7 +241,7 @@ function Results() {
     return (
         <>
             <Header />
-            <div className="container-fluid px-4 mt-4">
+            <div className="container-fluid px-4 mt-5">
 
                 {/* City Information Section */}
                 <div className="section-container mb-5">

@@ -1,0 +1,201 @@
+.shadoww {
+    min-height: 40vh;
+    background-color: rgba(0, 0, 0, 0.616);
+}
+
+.flag-space {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.city-text {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.flag {
+    width: 180px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.city-text-space {
+    max-width: 100%;
+    padding: 1rem;
+}
+
+.city-presentation {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #444;
+    text-align: justify;
+}
+
+.maps {
+    width: 100%;
+    height: 500px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+#mapid {
+    height: 100%;
+    width: 100%;
+}
+
+.map-space {
+    width: 100%;
+    height: 500px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.title {
+    font-size: 6rem;
+}
+
+.maps-space {
+    padding: 20px;
+    background-color: #eef7ff;
+    border-radius: 8px;
+}
+
+.link {
+    text-decoration: none;
+    font-size: large;
+}
+
+.header-results {
+    background-color: rgba(0, 0, 0, 0.616);
+    height: 10vh;
+}
+
+.ul1 {
+    margin: 0;
+}
+
+.graphic-space {
+    min-height: 400px;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.graph-space {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.recomendations {
+    background-color: #f8f9fa;
+    min-height: 400px;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.neighb {
+    color: black;
+}
+
+.bairro {
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #d7deff;
+}
+
+.chart-container {
+    max-width: 350px;
+    max-height: 350px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Section container with border and padding */
+.section-container {
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 2rem;
+    background-color: #ffffff;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+.section-container:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Add spacing and alignment for city information */
+.citysearch {
+    padding: 1rem;
+    gap: 1.5rem;
+}
+
+/* Section titles */
+.section-container h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+}
+
+.section-container h5 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #7f8c8d;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.arearisk h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #e74c3c;
+    margin-bottom: 1.5rem;
+}
+
+/* Card improvements */
+.card {
+    border: none;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.card ul {
+    padding-left: 1.25rem;
+    margin-bottom: 0;
+}
+
+.card li {
+    margin-bottom: 0.5rem;
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}

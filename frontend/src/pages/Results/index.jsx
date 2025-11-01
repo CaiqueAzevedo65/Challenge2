@@ -11,8 +11,32 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 
 const cityData = {
     "Minas Gerais": {
-        flag: '/public/images/Bandeira_de_Minas_Gerais.svg.png',
+        flag: '/images/Bandeira_de_Minas_Gerais.svg.png',
         description: `Localizada na Zona da Mata mineira, na divisa com o Espírito Santo, Espera Feliz possui relevo montanhoso e clima tropical de altitude, com verões chuvosos e invernos amenos. A cidade é cercada por belas paisagens da Mata Atlântica e se destaca na produção de café. Devido ao terreno acidentado e às chuvas intensas, os desastres mais comuns são deslizamentos e enchentes, exigindo atenção constante à prevenção ambiental.`,
+        mapCenter: [-19.8157, -43.9542],
+        mapZoom: 12,
+        riskAreas: [
+            {
+                coordinates: [
+                    [-19.8200, -43.9600],
+                    [-19.8180, -43.9550],
+                    [-19.8220, -43.9520],
+                    [-19.8240, -43.9580]
+                ],
+                color: 'blue',
+                description: 'Área de risco de enchente (Região Central)'
+            },
+            {
+                coordinates: [
+                    [-19.8100, -43.9450],
+                    [-19.8080, -43.9400],
+                    [-19.8120, -43.9380],
+                    [-19.8140, -43.9430]
+                ],
+                color: 'brown',
+                description: 'Área de risco de deslizamento (Serra)'
+            }
+        ],
         neighborhoods: [
             {
                 name: 'Beira Rio',
@@ -21,7 +45,9 @@ const cityData = {
                     'Evite construir a menos de 30m das margens do rio.',
                     'Mantenha calhas e bueiros sempre limpos.',
                     'Tenha um plano de evacuação familiar.',
-                    'Fique atento à elevação do nível do rio.'
+                    'Fique atento à elevação do nível do rio.',
+                    'Evite construir em terrenos instáveis.',
+                    'Monitore sinais de deslizamento, como rachaduras ou desníveis no solo.'
                 ]
             },
             {
@@ -81,8 +107,42 @@ const cityData = {
         },
     },
     "São Paulo": {
-        flag: '/public/images/Bandeira_do_estado_de_São_Paulo.svg.png',
+        flag: '/images/Bandeira_do_estado_de_São_Paulo.svg.png',
         description: `São Paulo é a maior cidade do Brasil, com clima subtropical e chuvas concentradas no verão. A cidade enfrenta desafios como enchentes em áreas urbanas e deslizamentos em regiões periféricas. A infraestrutura urbana e a densidade populacional tornam a prevenção essencial.`,
+        mapCenter: [-23.5505, -46.6333],
+        mapZoom: 12,
+        riskAreas: [
+            {
+                coordinates: [
+                    [-23.5550, -46.6400],
+                    [-23.5530, -46.6350],
+                    [-23.5570, -46.6320],
+                    [-23.5590, -46.6380]
+                ],
+                color: 'blue',
+                description: 'Área de risco de enchente (Zona Leste)'
+            },
+            {
+                coordinates: [
+                    [-23.5450, -46.6250],
+                    [-23.5430, -46.6200],
+                    [-23.5470, -46.6180],
+                    [-23.5490, -46.6230]
+                ],
+                color: 'orange',
+                description: 'Área de risco de alagamento (Centro)'
+            },
+            {
+                coordinates: [
+                    [-23.5650, -46.6500],
+                    [-23.5630, -46.6450],
+                    [-23.5670, -46.6430],
+                    [-23.5690, -46.6480]
+                ],
+                color: 'brown',
+                description: 'Área de risco de deslizamento (Zona Sul)'
+            }
+        ],
         neighborhoods: [
             {
                 name: 'Vila Mariana',
@@ -91,7 +151,9 @@ const cityData = {
                     'Evite áreas baixas durante chuvas intensas.',
                     'Mantenha bueiros limpos.',
                     'Tenha um plano de evacuação.',
-                    'Evite estacionar em áreas de risco.'
+                    'Evite estacionar em áreas de risco.',
+                    'Mantenha telhados e calhas desobstruídos.',
+                    'Monte um kit de emergência com itens essenciais.'
                 ]
             },
             {
@@ -121,7 +183,7 @@ const cityData = {
                     'Evite ruas com histórico de alagamentos.',
                     'Verifique rachaduras em muros e pisos.',
                     'Tenha uma rota de fuga segura.',
-                    'Não bloqueie escoamento de água com lixo.'
+                    'Não bloqueie saídas de água com lixo.'
                 ]
             },
             {
@@ -151,8 +213,42 @@ const cityData = {
         },
     },
     "Rio de Janeiro": {
-        flag: '/public/images/Bandeira_do_estado_do_Rio_de_Janeiro.svg.png',
+        flag: '/images/Bandeira_do_estado_do_Rio_de_Janeiro.svg.png',
         description: `O Rio de Janeiro é conhecido por seu relevo montanhoso e clima tropical. A cidade enfrenta enchentes em áreas baixas e deslizamentos em encostas. A prevenção é crucial para minimizar os impactos dos desastres naturais.`,
+        mapCenter: [-22.9068, -43.1729],
+        mapZoom: 12,
+        riskAreas: [
+            {
+                coordinates: [
+                    [-22.9100, -43.1800],
+                    [-22.9080, -43.1750],
+                    [-22.9120, -43.1720],
+                    [-22.9140, -43.1780]
+                ],
+                color: 'blue',
+                description: 'Área de risco de enchente (Zona Norte)'
+            },
+            {
+                coordinates: [
+                    [-22.9000, -43.1650],
+                    [-22.8980, -43.1600],
+                    [-22.9020, -43.1580],
+                    [-22.9040, -43.1630]
+                ],
+                color: 'brown',
+                description: 'Área de risco de deslizamento (Encostas)'
+            },
+            {
+                coordinates: [
+                    [-22.9200, -43.1900],
+                    [-22.9180, -43.1850],
+                    [-22.9220, -43.1820],
+                    [-22.9240, -43.1880]
+                ],
+                color: 'orange',
+                description: 'Área de risco de alagamento (Baixada)'
+            }
+        ],
         neighborhoods: [
             {
                 name: 'Copacabana',
@@ -276,7 +372,11 @@ function Results() {
                     </div>
                     <div className="maps d-flex justify-content-center">
                         <div className="map-space shadow">
-                            <MapComponent />
+                            <MapComponent 
+                                center={cityInfo.mapCenter}
+                                zoom={cityInfo.mapZoom}
+                                riskAreas={cityInfo.riskAreas}
+                            />
                         </div>
                     </div>
                 </div>
